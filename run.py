@@ -92,8 +92,18 @@ def play_quiz():
     player_name = welcome_player()
     display_intro()
 
-    score_percentage = calculate_score(score, len(questions))
-    display_results(score_percentage)
+    play_again = "yes"
+    while play_again.lower() == "yes":
+        guesses = []
+        score = 0
+        questions, options, answers = get_random_questions(questions, options, answers)
+
+        for question, opts, answer in zip(questions, options, answers):
+            if ask_question(question, opts, answer):
+                score =+ 1
+
+        score_percentage = calculate_score(score, len(questions))
+        display_results(score_percentage)
 
 # Run the quiz
 play_quiz()
