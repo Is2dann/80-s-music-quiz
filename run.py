@@ -26,5 +26,18 @@ def display_intro():
     print("  ******************************************")
     print("    Let's see how well you know 80's music!\n")
 
+
+def ask_question():
+    """
+    Ask a single question and return whether it's correct.
+    """
+
+
+def calculate_score():
+    """
+    Calculate the score percentage
+    """
+
+
 player_name = welcome_player()
 display_intro()
