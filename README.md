@@ -108,9 +108,9 @@ It is running on a mock terminal right now as it is a background game at the mom
 
   ### Used Code
 
-  * I was following the course material, specially the Love Sandwiches vide tutorial.
+  * I followed the course material, especially the Love Sandwiches video tutorial.
   * I also took a lot of help from:
       * [Percipio](https://learningpeople.percipio.com/)
       * [stackoverflow](www.stackoverflow.com)
       * [w3schools](www.w3schools.com)
-      * Google searches and youtube video tutorials
+      * Google searches and Youtube video tutorials
