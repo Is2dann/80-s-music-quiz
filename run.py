@@ -105,5 +105,7 @@ def play_quiz():
         score_percentage = calculate_score(score, len(questions))
         display_results(score_percentage)
 
+        play_again = input("Do you wanna go again? (yes/no):\n").lower()
+
 # Run the quiz
 play_quiz()
