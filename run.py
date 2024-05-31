@@ -31,6 +31,17 @@ questions = quiz_data.questions
 options = quiz_data.options
 answers = quiz_data.answers
 
+def get_random_questions(questions, options, answers, num_questions=8):
+    """
+    Shuffles and get a specified number (8) of random questions
+    from the quiz_data
+    """
+    combined_data = list(zip(questions, options, answers))
+    random.shuffle(combined_data)
+    questions, options, answers = zip(*combined_data)
+    return questions [:num_questions], options[:num_questions], answers[:num_questions]
+    
+
 def ask_question(question, options, answer):
     """
     Ask a single question and return if the answer was correct.
