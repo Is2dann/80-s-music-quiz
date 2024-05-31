@@ -20,3 +20,28 @@ questions = (
     "Who released the song 'Under Pressure' with Queen?",
     "What year did the song 'Livin' on a Prayer' come out?",
 )
+
+options = (
+    ("a. Eric Clapton", "b. Michael Jackson", "c. Bono", "d. Tina Turner"),
+    ("a. Fleetwood Mac","b. The Police","c. Kool and the Gang","d. Metallica"),
+    ("a. Thriller","b. Careless Whisper","c. Sweet Child O' Mine","d. Rock You Like a Hurricane"),
+    ("a. Madonna","b. Cyndi Lauper","c. Bonnie Tyler","d. Blondie"),
+    ("a. Guns 'n' Roses","b. U2","c. Pink Floyd","d. Eurythmics"),
+    ("a. The Beatles","b. Queen","c. AC/DC","d. Judas Priest"),
+    ("a. 1982","b. 1984","c. 1986","d. 1989"),
+    ("a. Alannah Myles","b. Cyndi Lauper","c. Madonna","d. Cher"),
+    ("a. Jet Airliner","b. Nothin Else Matters","c. Another One Bites the Dust","d. Don't Stop Believin'"),
+    ("a. Weird Al","b. Whitney Houston","c. Madonna","d. Belinda Carlisle"),
+    ("a. The Police","b. Journey","c. Simple Minds","d. Depeche Mode"),
+    ("a. Paul Simon","b. Lionel Richie","c. Prince","d. Bryan Adams"),
+    ("a. Wham!","b. Van Halen","c. Dire Straits","d. Guns N' Roses"),
+    ("a. Pet Shop Boys","b. Bon Jovi","c. The Proclaimers","d. Metallica"),
+    ("a. Phil Collins","b. Sting","c. George Michael","d. Rick Astley"),
+    ("a. Matthew Wilder","b. Billy Idol","c. George Harrison","d. Michael Jackson"),
+    ("a. A-ha","b. Duran Duran","c. Cameo","d. The Rolling Stones"),
+    ("a. Nena","b. Whitney Houston","c. Kim Wilde","d. Irene Cara"),
+    ("a. Billy Idol","b. Don Henley","c. Marvin Gaye","d. David Bowie"),
+    ("a. 1980","b. 1982","c. 1986","d. 1988"),
+)
+
+answers = ("b", "a", "d", "b", "d", "c", "a", "b", "d", "c", "a", "c", "d", "b", "c", "d", "a", "b", "d", "c")
