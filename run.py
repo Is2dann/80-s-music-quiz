@@ -14,4 +14,17 @@ def welcome_player():
         else:
             print("Minimum of 3 characters please and no foul words!")
 
+
+def display_intro():
+    """
+    Display game introduction
+    """
+    print("  ******************************************")
+    print(" *                                          *")
+    print("*       Welcome to the 80's Music Quiz       *")
+    print(" *                                          *")
+    print("  ******************************************")
+    print("    Let's see how well you know 80's music!\n")
+
 player_name = welcome_player()
+display_intro()
