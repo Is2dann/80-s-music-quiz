@@ -40,7 +40,7 @@ def get_random_questions(questions, options, answers, num_questions=8):
     random.shuffle(combined_data)
     questions, options, answers = zip(*combined_data)
     return questions [:num_questions], options[:num_questions], answers[:num_questions]
-    
+
 
 def ask_question(question, options, answer):
     """
@@ -66,10 +66,11 @@ def ask_question(question, options, answer):
             print("Invalid response. It's a, b, c or d. Watch your fingers!")
 
 
-def calculate_score():
+def calculate_score(score, num_questions):
     """
     Calculate the score percentage
     """
+    return (score / num_questions) * 100
 
 
 player_name = welcome_player()
