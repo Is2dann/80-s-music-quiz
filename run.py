@@ -27,9 +27,7 @@ def display_intro():
     print("    Let's see how well you know 80's music!\n")
 
 
-questions = quiz_data.questions
-options = quiz_data.options
-answers = quiz_data.answers
+
 
 def get_random_questions(questions, options, answers, num_questions=8):
     """
@@ -73,5 +71,18 @@ def calculate_score(score, num_questions):
     return (score / num_questions) * 100
 
 
-player_name = welcome_player()
-display_intro()
+def play_quiz():
+    """
+    Main function to play the quiz, the play_again method
+    validates the user input in case it is not 'yes' or 'no'
+    and make sure it's all lowercase.
+    """
+    questions = quiz_data.questions
+    options = quiz_data.options
+    answers = quiz_data.answers
+
+    player_name = welcome_player()
+    display_intro()
+
+# Run the quiz
+play_quiz()
