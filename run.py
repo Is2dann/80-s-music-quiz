@@ -77,6 +77,16 @@ def display_results(score_percentage):
     print("****   RESULTS    ****")
     print("**********************")
     print(f" **Your score is: {score_percentage}% **")
+    if score_percentage == 100:
+        print("***** Perfect score! You are an 80's music legend! *****\n")
+    elif score_percentage >= 80:
+        print("***** Great job! You really know your 80's music! *****\n")
+    elif score_percentage >= 50:
+        print("***** Not bad, but you can do better. *****\n")
+    elif score_percentage >= 20:
+        print("***** Ah, you probably are a millennial... *****\n")
+    else:
+        print("***** Go and listen some Justin Bieber. *****\n")
 
 
 def play_quiz():
