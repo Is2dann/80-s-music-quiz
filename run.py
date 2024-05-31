@@ -1,6 +1,7 @@
 import random
 import quiz_data
 
+
 def welcome_player():
     """
     Ask for player's name and welcome them.
@@ -82,7 +83,7 @@ def display_results(score_percentage):
     elif score_percentage >= 80:
         print("***** Great job! You really know your 80's music! *****\n")
     elif score_percentage >= 50:
-        print("***** Not bad, but you can do better. *****\n")
+        print("***** Eh, you are better than this. *****\n")
     elif score_percentage >= 20:
         print("***** Ah, you probably are a millennial... *****\n")
     else:
