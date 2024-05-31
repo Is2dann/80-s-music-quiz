@@ -116,6 +116,9 @@ def play_quiz():
         display_results(score_percentage)
 
         play_again = input("Do you wanna go again? (yes/no):\n").lower()
+        while play_again not in ["yes", "no"]:
+            print("Invalid response. Is it 'yes' or 'no'?")
+            play_again = input("So? Again? (yes/no):\n").lower()
 
 # Run the quiz
 play_quiz()
