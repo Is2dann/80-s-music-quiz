@@ -1,32 +1,116 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+![mockup](images/mock.png)
 
-Welcome,
+# The 80's Music Quiz (easy version)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **May 14, 2024**
+* The 80's music quiz game is simple and easy but fun game for everyone who loves quizgames.<br>
+It is running on a mock terminal right now as it is a background game at the moment, but soon it may be a complete game for the public.<br>
+    [Here is the game. Give it a go!](https://the-80s-music-quiz-ca63ac73c2e7.herokuapp.com/)
 
-## Reminders
+***
 
-- Your code must be placed in the `run.py` file
-- Your dependencies must be placed in the `requirements.txt` file
-- Do not edit any of the other files or your code may not deploy properly
+## Technology used
 
-## Creating the Heroku app
+* Python
+* Gitpod
+* VS Code
+* Github
+* Heroku
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+***
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Features - existing
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+| 1st step - Asking for a name with a validation for minimum 3 characters |
+| ------- |
+| ![name](images/name.png) |
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+| 2nd step - Introduction |
+| ------- |
+| ![intro](images/intro.png) |
 
-Connect your GitHub repository and deploy as normal.
+| 3rd step - Answering a question with wrong character input |
+| ------- |
+| ![answer-invalid](images/answer-invalid.png) |
 
-## Constraints
+| 4th step - Answering the question correctly |
+| ------- |
+| ![answer-good](images/answer-good.png) |
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+| 4th step - Answering the question incorrectly |
+| ------- |
+| ![answer-wrong](images/answer-wrong.png) |
 
----
+| 5th step - End of questions. Results message different according to percentage |
+| ------- |
+| ![results](images/results.png) |
 
-Happy coding!
+| Final step - Play again prompt: Yes: the game restarts. No: the game exits. Invalid: asks again |
+| ------- |
+| ![play-again](images/play-again-invalid.png) |
+
+***
+
+## Features - future
+
+* Expand the question base
+* Have a scoreboard
+* Implement different difficulties
+* Add multiplayer mode
+
+***
+
+## Testing
+
+### Validator
+
+| CI linter validator found no significant errors in the code. Shows 2 line too long, but because of the names I can't make it shorter |
+| ------- |
+| ![linter](images/linter.png) |
+
+### Manual testing
+
+| Action | Expectation | Result |
+| --- | --- | --- |
+| Type in name less than 3 character | Game stops and ask for a name longer than 3 character | PASS |
+| Choose correct answer | Game going forward with a message | PASS |
+| Choose incorrect answer | Game going forward with a message | PASS |
+| Type invalid character as answer | Game stops and asks for a valid character | PASS |
+| Answering questions | Receiving 8 random question per each game | PASS |
+| Finish game | Game shows results with a message according to reached percentage | PASS |
+| End: Type invalid answer for play again question  | The game asks again until receives a valid answer ("yes" or "no") | PASS |
+| End: Type "yes" as answer for play again question | The game restarts with new set of questions | PASS |
+| End: type "no" as answer for play again question | The game stops and exits | PASS |
+
+### Bugs and fixes
+
+* No bugs been detected
+
+***
+
+## Deployment
+
+* This game was deployed to Heroku
+  * Sign up for Heroku
+  * Click "create new app"
+  * Give the app a unique name
+  * Click settings in the section on top of the page
+  * Scroll down and press "Add buildpack"
+  * Click python first then nodejs (in that order)
+  * Click deploy in the section on top of the page
+  * Select method "Connect to Github" then press "Connect to Github" button 
+  * Search for hangman
+  * Click connect
+  * Click "Enable automatic deploys" button to enable Heroku to rebuild the app when a new change is pushed to Github
+
+  ***
+
+  ## Credits
+
+  ### Used Code
+
+  * I was following the course material, specially the Love Sandwiches vide tutorial.
+  * I also took a lot of help from:
+      * [Percipio](https://learningpeople.percipio.com/)
+      * [stackoverflow](www.stackoverflow.com)
+      * [w3schools](www.w3schools.com)
+      * Google searches and youtube video tutorials
