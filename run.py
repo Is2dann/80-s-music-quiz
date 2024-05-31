@@ -110,7 +110,7 @@ def play_quiz():
 
         for question, opts, answer in zip(questions, options, answers):
             if ask_question(question, opts, answer):
-                score =+ 1
+                score += 1
 
         score_percentage = calculate_score(score, len(questions))
         display_results(score_percentage)
