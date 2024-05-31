@@ -27,10 +27,32 @@ def display_intro():
     print("    Let's see how well you know 80's music!\n")
 
 
-def ask_question():
+questions = quiz_data.questions
+options = quiz_data.options
+answers = quiz_data.answers
+
+def ask_question(question, options, answer):
     """
-    Ask a single question and return whether it's correct.
+    Ask a single question and return if the answer was correct.
+    A while loop checks if the input is correct. If not
+    then asks again until receives the correct input.
     """
+    print("**********************\n")
+    print(question)
+    for option in options:
+        print(option)
+    while True:
+        guess = input("What do you think? (a, b, c, d): ")
+        if guess in ["a", "b", "c", "d"]:
+            if guess == answer:
+                print("YeeHaaw! Correct.\n")
+                return True
+            else:
+                print("Nooope! Busted.")
+                print(f"'{answer}' is the correct one. Dude, come on!!!\n")
+                return False
+        else:
+            print("Invalid response. It's a, b, c or d. Watch your fingers!")
 
 
 def calculate_score():
