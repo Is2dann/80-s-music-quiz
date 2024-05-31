@@ -27,8 +27,6 @@ def display_intro():
     print("    Let's see how well you know 80's music!\n")
 
 
-
-
 def get_random_questions(questions, options, answers, num_questions=8):
     """
     Shuffles and get a specified number (8) of random questions
@@ -71,6 +69,16 @@ def calculate_score(score, num_questions):
     return (score / num_questions) * 100
 
 
+def display_results(score_percentage):
+    """
+    Display the results based on the score percentage.
+    """
+    print("**********************")
+    print("****   RESULTS    ****")
+    print("**********************")
+    print(f" **Your score is: {score_percentage}% **")
+
+
 def play_quiz():
     """
     Main function to play the quiz, the play_again method
@@ -83,6 +91,9 @@ def play_quiz():
 
     player_name = welcome_player()
     display_intro()
+
+    score_percentage = calculate_score(score, len(questions))
+    display_results(score_percentage)
 
 # Run the quiz
 play_quiz()
