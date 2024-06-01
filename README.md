@@ -2,8 +2,8 @@
 
 # The 80's Music Quiz (easy version)
 
-* The 80's music quiz game is simple and easy but fun game for everyone who loves quizgames.<br>
-It is running on a mock terminal right now as it is a background game at the moment, but soon it may be a complete game for the public.<br>
+* The 80's music quiz game is simple and easy but fun game for everyone who loves quiz games.<br>
+It is running on a mock terminal right now as it is a background game at the moment, but soon it may be a fully-featured game for the public.<br>
     [Here is the game. Give it a go!](https://the-80s-music-quiz-ca63ac73c2e7.herokuapp.com/)
 
 ***
@@ -75,7 +75,7 @@ It is running on a mock terminal right now as it is a background game at the mom
 | Choose correct answer | Game going forward with a message | PASS |
 | Choose incorrect answer | Game going forward with a message | PASS |
 | Type invalid character as answer | Game stops and asks for a valid character | PASS |
-| Answering questions | Receiving 8 random question per each game | PASS |
+| Answering questions | Receiving 8 random questions in each game | PASS |
 | Finish game | Game shows results with a message according to reached percentage | PASS |
 | End: Type invalid answer for play again question  | The game asks again until receives a valid answer ("yes" or "no") | PASS |
 | End: Type "yes" as answer for play again question | The game restarts with new set of questions | PASS |
