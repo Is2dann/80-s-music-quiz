@@ -2,6 +2,13 @@ import random
 import quiz_data
 
 
+try:
+    import quiz_data
+except ImportError as e:
+    print("Error importing quiz_data module:", e)
+    raise
+
+
 def welcome_player():
     """
     Ask for player's name and welcome them.
